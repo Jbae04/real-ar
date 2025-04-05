@@ -1,0 +1,34 @@
+# Ignore hidden files and directories
+.*
+!.gitignore
+!.*.swp
+
+# Ignore SSH authentication files
+*.ssh/
+
+# Ignore Visual Studio Code server files
+.vscode-server/
+
+# Ignore personal directories
+Bookshelf/
+Desktop/
+Documents/
+Downloads/
+Music/
+Pictures/
+Public/
+Templates/
+Videos/
+venv/
+
+# Ignore hidden shell files
+.bash_history
+.bash_logout
+.bashrc
+.lesshst
+.profile
+.sudo_as_admin_success
+.wget-hsts
+.Xauthority
+.xsession-errors
+.xsession-errors.old
