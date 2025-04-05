@@ -139,7 +139,7 @@ sudo apt-get install libatlas-base-dev libjasper-dev libqtgui4 libqt4-test
   - Google Cloud Speech API transcribes voice input.  
   - Confirmation system ("Did you say X? Yes/No").  
 
-### **4. Database & Sync (`database.py`, AutoHomework API)**  
+### **4. Database & Sync (`database.py`, WebApp API)**  
 - **SQLite Structure**:  
   ```sql
   CREATE TABLE face_notes (
@@ -149,7 +149,7 @@ sudo apt-get install libatlas-base-dev libjasper-dev libqtgui4 libqt4-test
     category TEXT
   )
   ```  
-- **AutoHomework API Sync**:  
+- **WebApp API Sync**:  
   - Checks for updates every **60 seconds**.  
   - Pushes new registrations to the cloud.  
 
