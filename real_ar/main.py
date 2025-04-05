@@ -70,7 +70,7 @@ class IntegratedFaceVoiceSystem:
                # Determine if we should be listening based on system state
                should_listen = False
                with self.lock:
-                   should_listen = self.listening_for_wake_word and not self.registration_mode and self.unknown_faces
+                   should_listen = self.listening_for_wake_word and not self.registration_mode and len(self.unknown_faces) > 0
 
 
                    # Update display status only if the listening state *should* change
