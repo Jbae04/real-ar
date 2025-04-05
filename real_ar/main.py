@@ -222,6 +222,7 @@ class IntegratedFaceVoiceSystem:
 
        try:
            self.ar_display.update_status(wake_word_listening=False, voice_active=True)
+           print("delete me after test")
 
 
            # 名前入力
