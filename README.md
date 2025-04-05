@@ -1,4 +1,4 @@
-#**AR Face Recognition System - Comprehensive Documentation**  
+**AR Face Recognition System - Comprehensive Documentation**  
 
 ## **Development Team & Roles**  
 
