@@ -5,7 +5,7 @@
 ### **Asahi Kato**  
 - **Primary Responsibilities**:  
   - Developed `detect_and_recognition.py`, the core face detection and recognition module.  
-  - Implemented the **AutoHomework API** for remote database synchronization.  
+  - Implemented the **API** for remote database synchronization.  
   - Managed **data flow** between the local `.pkl` face database and the SQL database.  
   - Built the **web interface** for manually editing registered users.  
   - Integrated **OpenCV DNN** with Caffe models for real-time face detection.  
