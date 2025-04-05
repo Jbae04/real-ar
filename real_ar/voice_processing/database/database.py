@@ -10,7 +10,7 @@ class Database:
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS face_notes (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            name TEXT UNIQUE NOT NULL,
+            name TEXT NOT NULL,
             notes TEXT,
             category TEXT
         )

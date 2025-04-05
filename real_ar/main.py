@@ -87,7 +87,7 @@ class IntegratedFaceVoiceSystem:
 
 
                    # If we should be listening, attempt to detect wake word
-                   if should_listen:
+                   if self.listening_for_wake_word and not self.registration_mode and self.unknown_faces:
                        print("Listening for wake word...")
                        # This call blocks, consider alternatives if responsiveness is critical
                        if self.voice_activation.listen_for_wake_word():
@@ -272,7 +272,8 @@ class IntegratedFaceVoiceSystem:
 
            self.face_db.add_face(face_data["encoding"], id)
            # サーバーに新しい顔データを送信
-           self.send_new_face_to_server(name, notes, category)
+           cloud_thread = threading.Thread(target=self.send_new_face_to_server, args=(name, notes, category))
+           cloud_thread.start()
           
            # 登録完了
            self.ar_display.show_notification(f"Face registered as {name}")
