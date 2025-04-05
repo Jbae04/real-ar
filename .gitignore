@@ -34,7 +34,3 @@ recordings/
 .xsession-errors
 .xsession-errors.old
 
-# Project-specific ignores
-real_ar/face_db.pkl          
-real_ar/sql_db_path          
-real_ar/voice_notes.db       
