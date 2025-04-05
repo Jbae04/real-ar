@@ -132,8 +132,6 @@ class IntegratedFaceVoiceSystem:
 
                if response.status_code == 200:
                    data = response.json()
-                   print("Yuuuuuuuuuto")
-
 
                    # 変更があればローカルDBに反映
                    if data and len(data) > 0:
@@ -222,8 +220,6 @@ class IntegratedFaceVoiceSystem:
 
        try:
            self.ar_display.update_status(wake_word_listening=False, voice_active=True)
-           print("delete me after test")
-
 
            # 名前入力
            self.ar_display.update_voice_feedback("Listening for name...", is_final=False)
