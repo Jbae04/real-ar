@@ -12,7 +12,7 @@
 
 ### **Yuto Shibuya**  
 - **Primary Responsibilities**:  
-  - Designed and implemented the **AR Display System** (`ar_display.py`).  
+  - Designed and implemented the **AR Display System** (`ar_display.py`, `display_manager.py`).  
   - Developed **Pygame-based overlays** for real-time feedback on Xreal glasses.  
   - Handled **threading** in `main.py` for concurrent face detection, voice processing, and display updates.  
   - Created **UI states** (normal mode, unknown face prompt, registration workflow).  
